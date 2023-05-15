@@ -45,6 +45,16 @@ a{
 }
 
 
+
+#button2{
+    position: absolute;
+    bottom: 0rem;
+    height: 9vh;
+    margin-bottom: 2px;
+    
+}
+
+
 #login{
     position:relative;
     bottom: 310px;
@@ -68,6 +78,19 @@ a{
         border: 2px solid var(--secundary-color);
     }
 }
+
+
+
+
+.link_volta{
+    position: absolute;
+    bottom: 40px;
+    color: #F3F3F3;
+    text-decoration: underline;
+}
+
+
+
 
 
 
@@ -158,6 +181,7 @@ top: 35px;
 @media (max-width:768px){
     .form{
         width: 100%;
+        height: 100%;
         justify-content: space-evenly;
     }
     .form-register{
@@ -173,6 +197,24 @@ top: 35px;
 }
 
 
+
+
+@media (max-width:665px){
+    .form{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .form-register{
+        position: absolute;
+        background-color: var(--primary-color);
+        color: var(--secundary-color);
+        transform: translateX(100%);
+    }
+    .login-container.move .form-register{
+        transform: translateX(0%);
+    }
+
+}
 
 
 .login-container{
