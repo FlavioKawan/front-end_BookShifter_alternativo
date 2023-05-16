@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./style.css">
     
 
-    <script src="./js/login.js" defer></script>
-    <title>Login - Leonid</title>
+   
+    <title>Login</title>
 </head>
 <body>
     <main>
@@ -21,22 +21,18 @@
             <div class="form-container">
                 <form class="form form-login">
                     <h2 class="form-title">Entrar com</h2>
-                    <div class="form-social">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                    <p class="form-text">ou utilize sua conta</p>
+            
+                    <p class="form-text">utilize sua conta</p>
                     <div class="form-input-container">
                         <input type="email" class="form-input" placeholder="Email">
-                        <input type="password" class="form-input" placeholder="Senha">
+                        <input type="password" class="form-input" id="senha" placeholder="Senha">
+                    
+                        <button id="btn_mostrar" type="button">
+                            <img src="assets/olho.png" class="olho"/>
+                        </button>
+                      
                     </div>
+                    
                     <a href="#" class="form-link">Esqueceu a senha?</a>
                     <button type="button" class="form-button">Logar</button>
                     <p class="mobile-text">
@@ -46,23 +42,14 @@
                 </form>
                 <form class="form form-register">
                     <h2 class="form-title">Criar Conta</h2>
-                    <div class="form-social">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+
                     <p class="form-text">ou cadastre seu email</p>
                     <div class="form-input-container">
-                        <input type="text" class="form-input" placeholder="Nome">
+                       
                         <input type="email" class="form-input" placeholder="Email">
                         <input type="password" class="form-input" placeholder="Senha">
                     </div>
+                    
                     <a href="cadastro.html">
                     <button type="button" class="form-button">Cadastrar</button>
                     </a>
@@ -89,5 +76,6 @@
         </div>
        
     </main>
+    <script src="login.js"></script>
 </body>
 </html>

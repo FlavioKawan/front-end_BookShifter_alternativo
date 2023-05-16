@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,28 @@
     <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <link rel="stylesheet" href="style_cadastro.css">
-    
+
 
     <script src="./js/login.js" defer></script>
-    <title>Login - Leonid</title>
+    <title>Cadastro</title>
 </head>
+
 <body>
     <main>
         <div class="login-container" id="login-container">
             <div class="form-container">
                 <form class="form form-login">
-                    <h2 class="form-title">Conta</h2>
+                    <h2 class="form-title" id="titulo1">Cadastrar</h2>
                     <div class="form-social">
-                       
+
                     </div>
-                    
+
                     <div class="form-input-container">
                         <input type="text" class="form-input" placeholder="Nome">
                         <input type="text" class="form-input" placeholder="Sobrenome">
@@ -34,24 +39,31 @@
                         <input type="password" class="form-input" placeholder="Senha">
                     </div>
                     <button type="button" class="form-button" id="button2">Cadastrar</button>
-                   
-                    
+
+
                 </form>
                 <form class="form form-register">
                     <h2 class="form-title" id="titulo">Criar Conta</h2>
-                   
+
                     <div class="form-input-container" id="formu">
-                        <input type="text" class="form-input" placeholder="CEP" required="Necesario Preencher">
-                        <input type="text" class="form-input" placeholder="Endereço" required="Necesario Preencher">
-                        <input type="text" class="form-input" placeholder="Cidade" required="Necesario Preencher">
-                        <input type="text" class="form-input" placeholder="Numero da Residencia" required="Necesario Preenche">
-                        <input type="text" class="form-input" placeholder="Complemento" required="Necesario Preenche">
-                        <input type="text" class="form-input" placeholder="Estado" required="Necesario Preenche">
+                        <input type="text" class="form-input" placeholder="CEP" id="cep" required="Necesario Preencher"
+                            data-input>
+                        <span id="cep-status" class=""></span>
+                        <input type="text" class="form-input" placeholder="Endereço" id="endereco"
+                            required="Necesario Preencher" data-input>
+                        <input type="text" class="form-input" placeholder="Cidade" id="cidade"
+                            required="Necesario Preencher" data-input>
+                        <input type="text" class="form-input" placeholder="Numero da Residencia" id="numero"
+                            required="Necesario Preenche" data-input>
+                        <input type="text" class="form-input" placeholder="Complemento" id="complemento"
+                            required="Necesario Preenche" data-input>
+                        <input type="text" class="form-input" placeholder="Estado" id="estado"
+                            required="Necesario Preenche" data-input>
                     </div>
                     <button type="button" class="form-button" id="button">Cadastrar</button>
                     <p class="mobile-text" id="login">
                         Já tem conta?
-                        <a href="#" id="open-login-mobile" >Login</a>
+                        <a href="#" id="open-login-mobile">Login</a>
                     </p>
                 </form>
             </div>
@@ -63,13 +75,17 @@
                 </div>
                 <div class="overlay">
                     <h2 class="form-title form-title-light">Bem vindo!!</h2>
-                    <a href="index.html" class="link_volta"><p>Já Possui Conta?</p></a>
+                    <a href="index.html" class="link_volta">
+                        <p>Já Possui Conta?</p>
+                    </a>
                     <p class="form-text">Cadastre-se e comece a usar a nossa plataforma on-line</p>
                     <button class="form-button form-button-light" id="open-register">Proximo</button>
                 </div>
             </div>
         </div>
-        <script src="login.js"></script>
+        <script src="cadastro.js"></script>
+        <script src="apicep.js"></script>
     </main>
 </body>
+
 </html>

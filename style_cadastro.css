@@ -80,6 +80,18 @@ a{
 }
 
 
+#button2 {
+    display: none;
+    top: 425px; /* Esconde o botão por padrão */
+  }
+  
+  /* Aplica o estilo apenas para dispositivos com largura menor ou igual a 768 pixels */
+  @media (max-width: 768px) {
+    #button2 {
+      display: block; /* Exibe o botão quando a resolução for menor ou igual a 768 pixels */
+    }
+  }
+
 
 
 .link_volta{
@@ -87,6 +99,12 @@ a{
     bottom: 40px;
     color: #F3F3F3;
     text-decoration: underline;
+}
+
+
+#titulo1{
+    position: absolute;
+    top: 40px;
 }
 
 
